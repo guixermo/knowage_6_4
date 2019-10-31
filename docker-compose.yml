@@ -1,14 +1,14 @@
 knowage:
-    image: guixermo/knowage-server:latest
+    image: id de la imagen
     links:
         - knowagedb:db
     ports:
-        - "8080:8080"
+        - "62001:62001"
     environment:
         - WAIT_MYSQL=true
 
 knowagedb:
-    image: mysql/mysql-server:5.7.24
+    image: mysql:5.7.24
     environment:
         - MYSQL_USER=knowageuser
         - MYSQL_PASSWORD=knowagepassword
